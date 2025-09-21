@@ -35,22 +35,22 @@ const HandelRegister = () => {
                 <div class="flex flex-col gap-6">
                     <div class="flex flex-col">
                         <label for="name" class="text-black">Name : {{ name }}</label>
-                        <UInput v-model="name" :ui="{base: 'bg-gray-200'}" id="name" label="Name" type="text" />
+                        <UInput v-model="name" :ui="{base: 'bg-white'}" id="name" label="Name" type="text" />
                     </div>
                     <div class="flex flex-col">
                         <label for="email" class="text-black">Email : {{ email }}</label>
-                        <UInput v-model="email" :ui="{base: 'bg-gray-200'}" id="email" label="Email" type="email" />
+                        <UInput v-model="email" :ui="{base: 'bg-white'}" id="email" label="Email" type="email" />
                     </div>
                     <div class="flex flex-col">
                         <label for="phone" class="text-black">Phone : {{ phone }}</label>
-                        <UInput v-model="phone" :ui="{base: 'bg-gray-200'}" id="phone" label="Phone" type="tel" />
+                        <UInput v-model="phone" :ui="{base: 'bg-white'}" id="phone" label="Phone" type="tel" />
                     </div>
                     <div class="flex flex-col">
                         <label for="password" class="text-black">Password : {{ password }}</label>
-                        <UInput v-model="password" :ui="{base: 'bg-gray-200'}" id="password" label="Password" type="password" />
+                        <UInput v-model="password" :ui="{base: 'bg-white'}" id="password" label="Password" type="password" />
                     </div>
                     <div class="flex flex-col">
-                        <UButton label="Register" @click="HandelRegister()" class="cursor-pointer"/>
+                        <UButton label="Register" @click="HandelRegister()" class="cursor-pointer "/>
                     </div>
                 </div>
             </div>
