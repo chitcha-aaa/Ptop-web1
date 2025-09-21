@@ -1,11 +1,9 @@
 <script setup lang="ts">
-const userListData = useState('userListData', () => {ref()})
-
+const userListData = useState<unknown[]>('userListData', () => [])
 async function loadData() {
  let res = await fetch('http://localhost:4000/user-list')
  userListData.value = await res.json()
 }
-
 onMounted(async () => {
   await loadData()
 })
